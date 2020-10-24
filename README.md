@@ -8,7 +8,7 @@
 Package topk implements finding the top k elements in the collection.
 
 ## Feature
-* Heap Sort
+* Min Heap
 * Top K
 * Sort Top K
 
