@@ -17,18 +17,18 @@ func (h list) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func TestTopK(t *testing.T) {
 	testTopK(3, false, t)
 	testTopK(3, true, t)
-	testTopK(9, false, t)
+	testTopK(9, true, t)
 }
 
 func testTopK(k int, sortK bool, t *testing.T) {
-	l := list{10, 7, 2, 5, 1}
+	l := list{10, 7, 1, 5, 2}
 	Top(l, k, sortK)
 	n := l.Len()
 	if k > n {
 		k = n
 	}
 	for j := k; j < l.Len(); j++ {
-		for i := 0; i < k-1; i++ {
+		for i := 0; i < k; i++ {
 			if l.Less(i, j) {
 				t.Error("top error")
 			}
@@ -50,8 +50,8 @@ func TestHeapInsert(t *testing.T) {
 	for i := 1; i < n; i++ {
 		up(l, i)
 	}
-	for i := 1; i < n-1; i++ {
-		if l.Less(1, 0) {
+	for i := 1; i < n; i++ {
+		if l.Less(i, 0) {
 			t.Error("HeapInsert error")
 		}
 	}
@@ -64,7 +64,7 @@ func TestHeapify(t *testing.T) {
 	for i := n/2 - 1; i >= 0; i-- {
 		down(l, i, n)
 	}
-	for i := 1; i < n-1; i++ {
+	for i := 1; i < n; i++ {
 		if l.Less(i, 0) {
 			t.Error("Heapify error")
 		}
