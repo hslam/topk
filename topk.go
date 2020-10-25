@@ -4,7 +4,7 @@
 // Package topk implements finding the top k elements in the collection.
 package topk
 
-// Interface is a type, typically a collection, that satisfies sort.Interface can be
+// Interface is a type, typically a collection, that satisfies topk.Interface can be
 // sorted by the routines in this package. The methods require that the
 // elements of the collection be enumerated by an integer index.
 type Interface interface {
