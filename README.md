@@ -41,9 +41,11 @@ func (h list) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func main() {
 	l := list{5, 10, 2, 7, 1}
 	k := 3
-	topk.Top(l, 3, false)
+	sortK := false
+	topk.Top(l, 3, sortK)
 	fmt.Println(l[:k])
-	topk.Top(l, 3, true)
+	sortK = true
+	topk.Top(l, 3, sortK)
 	fmt.Println(l[:k])
 }
 ```
