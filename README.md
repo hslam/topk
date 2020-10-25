@@ -39,21 +39,21 @@ func (h list) Less(i, j int) bool { return h[i] < h[j] }
 func (h list) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 
 func main() {
-	l := list{5, 10, 2, 7, 1}
-	k := 3
-	sortK := false
+	Top(list{5, 10, 2, 7, 1}, 3, false)
+	Top(list{5, 10, 2, 7, 1}, 3, true)
+}
+
+func Top(l list, k int, sortK bool) {
+	fmt.Printf("list:%v,k:%d,sortK:%t\t", l, k, sortK)
 	topk.Top(l, 3, sortK)
-	fmt.Println(l[:k])
-	sortK = true
-	topk.Top(l, 3, sortK)
-	fmt.Println(l[:k])
+	fmt.Printf("==>\ttop%d:%v\n", k, l[:k])
 }
 ```
 
 #### Output
 ```
-[5 10 7]
-[10 7 5]
+list:[5 10 2 7 1],k:3,sortK:false	==>	top3:[5 10 7]
+list:[5 10 2 7 1],k:3,sortK:true	==>	top3:[10 7 5]
 ```
 
 ### License
