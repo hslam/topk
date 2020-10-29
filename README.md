@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/hslam/topk)](https://goreportcard.com/report/github.com/hslam/topk)
 [![LICENSE](https://img.shields.io/github/license/hslam/topk.svg?style=flat-square)](https://github.com/hslam/topk/blob/master/LICENSE)
 
-Package topk implements finding the top k elements in the collection.
+Package topk finds the top k elements in the collection.
 
 ## Feature
 * Min Heap

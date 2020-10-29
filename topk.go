@@ -1,7 +1,7 @@
 // Copyright (c) 2020 Meng Huang (mhboy@outlook.com)
 // This package is licensed under a MIT license that can be found in the LICENSE file.
 
-// Package topk implements finding the top k elements in the collection.
+// Package topk finds the top k elements in the collection.
 package topk
 
 // Interface is a type, typically a collection, that satisfies topk.Interface can be
