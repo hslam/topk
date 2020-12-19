@@ -1,6 +1,6 @@
 # topk
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/hslam/topk)](https://pkg.go.dev/github.com/hslam/topk)
-[![Build Status](https://travis-ci.org/hslam/topk.svg?branch=master)](https://travis-ci.org/hslam/topk)
+[![Build Status](https://github.com/hslam/topk/workflows/build/badge.svg)](https://github.com/hslam/topk/actions)
 [![codecov](https://codecov.io/gh/hslam/topk/branch/master/graph/badge.svg)](https://codecov.io/gh/hslam/topk)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hslam/topk)](https://goreportcard.com/report/github.com/hslam/topk)
 [![LICENSE](https://img.shields.io/github/license/hslam/topk.svg?style=flat-square)](https://github.com/hslam/topk/blob/master/LICENSE)
