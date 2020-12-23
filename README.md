@@ -45,7 +45,7 @@ func main() {
 
 func Top(l list, k int, sortK bool) {
 	fmt.Printf("list:%v,k:%d,sortK:%t\t", l, k, sortK)
-	topk.Top(l, 3, sortK)
+	topk.Top(l, k, sortK)
 	fmt.Printf("==>\ttop%d:%v\n", k, l[:k])
 }
 ```
