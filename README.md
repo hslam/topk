@@ -24,7 +24,7 @@ import "github.com/hslam/topk"
 ```
 ### Usage
 #### Example
-```
+```go
 package main
 
 import (
